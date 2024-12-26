@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample webpage with various sections and elements.">
+    <meta name="author" content="ChatGPT">
+    <title>Sample Large HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #444;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .intro img {
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-text {
+            width: 65%;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        .feature-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            flex: 1;
+        }
+
+        .feature-card h3 {
+            color: #333;
+        }
+
+        .features-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="content-container">
+            <h1>Welcome to Our Sample Website</h1>
+            <p>Your one-stop platform for learning HTML, CSS, and JavaScript!</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content-container">
+
+        <!-- Introduction Section -->
+        <section id="home" class="intro">
+            <img src="https://via.placeholder.com/500x300" alt="Intro Image">
+            <div class="intro-text">
+                <h2>Welcome to Our Website</h2>
+                <p>We are a creative team specializing in web development, digital marketing, and brand identity creation. Our goal is to bring your vision to life with innovative design and top-tier development. Browse through our services and feel free to contact us for collaborations.</p>
+                <a href="#contact" class="button">Contact Us</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a group of passionate developers, designers, and marketers who believe in the power of creativity and technology. Our services range from building interactive websites to strategizing your brand's digital presence. We have worked with various clients, from small startups to large enterprises, helping them achieve their online goals.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer a variety of services designed to meet your business needs. Whether you're looking for web development, digital marketing strategies, or SEO optimization, we can help. Here are a few services we specialize in:</p>
+
+            <!-- Feature Cards -->
+            <div class="features-container">
+                <div class="feature-card">
+                    <h3>Web Development</h3>
+                    <p>Responsive and dynamic websites built to engage your audience.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>SEO Optimization</h3>
+                    <p>Improving your website's visibility on search engines like Google.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Brand Strategy</h3>
+                    <p>Designing a memorable and effective brand identity for your business.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you would like to discuss a project or get a free consultation, feel free to reach out to us using the form below:</p>
+
+            <!-- Contact Form -->
+            <div class="form-container">
+                <form action="#">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+            <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Browse through our image gallery to see some of our previous projects.</p>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <img src="https://via.placeholder.com/300x200" alt="Project 1" />
+            <img src="https://via.placeholder.com/300x200" alt="Project 2" />
+            <img src="https://via.placeholder.com/300x200" alt="Project 3" />
+            <img src="https://via.placeholder.com/300x200" alt="Project 4" />
+            <img src="https://via.placeholder.com/300x200" alt="Project 5" />
+            <img src="https://via.placeholder.com/300x200" alt="Project 6" />
+        </div>
+    </section>
+
+    <!-- Data Table Section -->
+    <section id="table">
+        <h2>Our Projects Data</h2>
+        <p>Below is a table that showcases some of the projects we have worked on:</p>
+
+        <!-- Projects Table -->
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Client</th>
+                    <th>Status</th>
+                    <th>Completion Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Project Alpha</td>
+                    <td>Company A</td>
+                    <td>Completed</td>
+                    <td>2024-01-15</td>
+                </tr>
+                <tr>
+                    <td>Project Beta</td>
+                    <td>Company B</td>
+                    <td>In Progress</td>
+                    <td>2024-03-01</td>
+                </tr>
+                <tr>
+                    <td>Project Gamma</td>
+                    <td>Company C</td>
+                    <td>Completed</td>
+                    <td>2023-12-25</td>
+                </tr>
+                <tr>
+                    <td>Project Delta</td>
+                    <td>Company D</td>
+                    <td>Not Started</td>
+                    <td>2024-06-01</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Embedded Video Section -->
+    <section id="video">
+        <h2>Watch Our Demo Video</h2>
+        <p>Here's a quick overview of our work and services:</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- JavaScript Interactivity Section -->
+    <section id="interactivity">
+        <h2>Interactive JavaScript Example</h2>
+        <p>Click the button below to change the background color of this section.</p>
+        
+        <!-- Color Change Button -->
+        <button id="changeColorButton">Change Background Color</button>
+        <div id="colorBox" style="margin-top: 20px; padding: 20px; background-color: #ccc; border-radius: 8px;">
+            <p>The background color will change when you click the button above.</p>
+        </div>
+    </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2>What Our Clients Say</h2>
+            <p>Don't just take our word for it. Here's what some of our clients have to say about our work:</p>
+    
+            <!-- Testimonial Cards -->
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <p>"The team did an amazing job! Our website has never looked better, and the results have exceeded expectations!"</p>
+                    <h4>- Sarah Johnson, CEO of Tech Innovations</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"We saw a huge increase in website traffic and engagement after they revamped our online presence. Highly recommend!"</p>
+                    <h4>- Michael Brown, Marketing Director at Digital Solutions</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Their creativity and attention to detail made our branding truly stand out. Our sales have been growing steadily!"</p>
+                    <h4>- Emma White, Founder of Green Products Co.</h4>
+                </div>
+            </div>
+        </section>
+    
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <p>Here are some of the most common questions we receive:</p>
+    
+            <!-- FAQ Accordion -->
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">What services do you offer?</button>
+                    <div class="faq-answer">
+                        <p>We offer web development, digital marketing, SEO, branding, and custom web applications.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How long does it take to build a website?</button>
+                    <div class="faq-answer">
+                        <p>Depending on the complexity of the website, it usually takes 2-6 weeks to complete a project.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you offer ongoing maintenance?</button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer monthly maintenance packages to keep your website up-to-date and secure.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Newsletter Subscription Section -->
+        <section id="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated on the latest news, tips, and offers by subscribing to our newsletter.</p>
+    
+            <!-- Newsletter Form -->
+            <div class="newsletter-form">
+                <form action="#">
+                    <input type="email" id="email-newsletter" name="email-newsletter" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    
+        <!-- Contact Map Section -->
+        <section id="map">
+            <h2>Find Us</h2>
+            <p>Our office is located at the heart of the city. You can find us on the map below:</p>
+    
+            <!-- Embedded Google Map -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0228761356997!2d-122.41941538468046!3d37.77492917975952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808d3cf4e255%3A0x4585a4ed3e4f5587!2sSalesforce%20Park!5e0!3m2!1sen!2sus!4v1674604241739!5m2!1sen!2sus"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+            <!-- Team Section -->
+    <section id="team">
+        <h2>Meet Our Team</h2>
+        <p>Our team consists of creative professionals who are passionate about helping you succeed.</p>
+
+        <!-- Team Members -->
+        <div class="team-container">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/200" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/200" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Project Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/200" alt="Team Member 3">
+                <h3>Emily Brown</h3>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/200" alt="Team Member 4">
+                <h3>Michael Lee</h3>
+                <p>SEO Specialist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans Section -->
+    <section id="pricing">
+        <h2>Pricing Plans</h2>
+        <p>Choose a pricing plan that fits your needs. We offer competitive rates for all our services.</p>
+
+        <!-- Pricing Cards -->
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Basic Plan</h3>
+                <p>For small businesses or personal websites.</p>
+                <p><strong>$199</strong> / month</p>
+                <ul>
+                    <li>5 Web Pages</li>
+                    <li>Basic SEO</li>
+                    <li>Responsive Design</li>
+                </ul>
+                <a href="#contact" class="button">Sign Up</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Standard Plan</h3>
+                <p>For growing businesses looking to expand their online presence.</p>
+                <p><strong>$499</strong> / month</p>
+                <ul>
+                    <li>15 Web Pages</li>
+                    <li>Advanced SEO</li>
+                    <li>Social Media Integration</li>
+                </ul>
+                <a href="#contact" class="button">Sign Up</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Premium Plan</h3>
+                <p>For large businesses with complex requirements.</p>
+                <p><strong>$999</strong> / month</p>
+                <ul>
+                    <li>Unlimited Pages</li>
+                    <li>Premium SEO</li>
+                    <li>Custom Development</li>
+                    <li>24/7 Support</li>
+                </ul>
+                <a href="#contact" class="button">Sign Up</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Our Blog</h2>
+        <p>Stay up to date with the latest trends and insights from the world of web development and digital marketing.</p>
+
+        <!-- Blog Post Previews -->
+        <div class="blog-container">
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/300x200" alt="Blog Post 1">
+                <h3>How to Improve Your Website's SEO in 2024</h3>
+                <p>SEO is constantly evolving. Here are some tips to stay ahead in 2024...</p>
+                <a href="#readmore" class="button">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/300x200" alt="Blog Post 2">
+                <h3>The Importance of Responsive Web Design</h3>
+                <p>Responsive design is no longer optional. Learn why it's crucial for your website's success...</p>
+                <a href="#readmore" class="button">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/300x200" alt="Blog Post 3">
+                <h3>Understanding the Basics of Web Development</h3>
+                <p>Web development can seem overwhelming. Here’s a guide to help you understand the basics...</p>
+                <a href="#readmore" class="button">Read More</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have any questions or inquiries? Send us a message, and we'll get back to you as soon as possible.</p>
+    
+            <!-- Contact Form -->
+            <form id="contactForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                    <h3>About Us</h3>
+                    <p>We are a creative agency dedicated to delivering high-quality digital solutions that drive business growth.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <p class="footer-credit">© 2024 Creative Agency. All Rights Reserved.</p> -->
+        </footer>
+    
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Creative Agency - Web development, digital marketing, branding, and SEO services for businesses of all sizes.">
+        <meta name="keywords" content="web development, digital marketing, SEO, branding, creative agency, responsive design, social media">
+        <meta name="author" content="Creative Agency">
+        <meta property="og:title" content="Creative Agency - Digital Solutions">
+        <meta property="og:description" content="We offer web development, SEO, digital marketing, and branding services to help businesses grow.">
+        <meta property="og:image" content="https://via.placeholder.com/1200x630">
+        <meta property="og:url" content="https://www.creativeagency.com">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Creative Agency - Digital Solutions">
+        <meta name="twitter:description" content="We offer web development, SEO, digital marketing, and branding services to help businesses grow.">
+        <meta name="twitter:image" content="https://via.placeholder.com/1200x630">
+    
+        <style>
+            /* Contact Form Section */
+            #contact {
+                padding: 50px 20px;
+                background-color: #f9f9f9;
+                margin-top: 40px;
+            }
+    
+            #contact h2 {
+                text-align: center;
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+    
+            .form-group {
+                margin-bottom: 20px;
+            }
+    
+            .form-group label {
+                display: block;
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+    
+            .form-group input,
+            .form-group textarea {
+                width: 100%;
+                padding: 10px;
+                font-size: 14px;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+            }
+    
+            .form-group textarea {
+                resize: vertical;
+            }
+    
+            .submit-btn {
+                display: block;
+                width: 100%;
+                padding: 12px;
+                background-color: #333;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+    
+            .submit-btn:hover {
+                background-color: #555;
+            }
+    
+            /* Footer Section */
+            footer {
+                background-color: #333;
+                color: white;
+                padding: 40px 20px;
+                text-align: center;
+            }
+    
+            .footer-container {
+                display: flex;
+                justify-content: space-between;
+                max-width: 1200px;
+                margin: 0 auto;
+                flex-wrap: wrap;
+            }
+    
+            .footer-container div {
+                flex: 1;
+                margin: 20px;
+            }
+    
+            .footer-container h3 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+    
+            .footer-container ul {
+                list-style: none;
+                padding: 0;
+            }
+    
+            .footer-container ul li {
+                margin: 10px 0;
+            }
+    
+            .footer-container ul li a {
+                color: white;
+                text-decoration: none;
+            }
+    
+            .footer-container ul li a:hover {
+                text-decoration: underline;
+            }
+    
+            .footer-credit {
+                margin-top: 40px;
+                font-size: 14px;
+            }
+    
+            /* Media Query for Responsiveness */
+            @media (max-width: 768px) {
+                .footer-container {
+                    flex-direction: column;
+                    text-align: center;
+                }
+    
+                .footer-container div {
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+    
+        <script>
+            // Form submission handling (for illustration)
+            document.getElementById("contactForm").addEventListener("submit", function (event) {
+                event.preventDefault();
+                alert("Thank you for reaching out! We'll get back to you soon.");
+            });
+        </script>
+    
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="back-to-top-btn">Back to Top</button>
+
+    <style>
+        /* Team Section */
+        .team-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            text-align: center;
+            width: 22%;
+            margin-bottom: 30px;
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member h3 {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* Pricing Section */
+        .pricing-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .pricing-card {
+            background-color: #fff;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .pricing-card h3 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pricing-card ul li {
+            margin: 10px 0;
+        }
+
+        /* Blog Section */
+        .blog-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .blog-post {
+            width: 30%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .blog-post img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post h3 {
+            margin-top: 15px;
+            color: #333;
+        }
+
+        .blog-post p {
+            color: #777;
+            margin-top: 10px;
+        }
+
+        /* Back to Top Button */
+        .back-to-top-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            display: none;
+        }
+
+        .back-to-top-btn:hover {
+            background-color: #555;
+        }
+    </style>
+
+    <script>
+        // Back to Top Button functionality
+        const backToTopButton = document.getElementById("backToTopBtn");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        backToTopButton.onclick = function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+    </script>
+
+    
+        <style>
+            /* Testimonials Section */
+            .testimonials-container {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 40px;
+            }
+    
+            .testimonial-card {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 30%;
+                text-align: center;
+            }
+    
+            .testimonial-card p {
+                font-style: italic;
+            }
+    
+            .testimonial-card h4 {
+                margin-top: 15px;
+                font-weight: bold;
+                color: #333;
+            }
+    
+            /* FAQ Section */
+            .faq-container {
+                margin-top: 30px;
+            }
+    
+            .faq-item {
+                margin-bottom: 10px;
+            }
+    
+            .faq-question {
+                background-color: #333;
+                color: white;
+                padding: 15px;
+                width: 100%;
+                text-align: left;
+                border: none;
+                font-size: 16px;
+                cursor: pointer;
+            }
+    
+            .faq-answer {
+                padding: 15px;
+                background-color: #f4f4f4;
+                border-radius: 5px;
+                display: none;
+            }
+    
+            .faq-item.active .faq-answer {
+                display: block;
+            }
+    
+            /* Newsletter Section */
+            .newsletter-form {
+                margin-top: 20px;
+            }
+    
+            .newsletter-form input {
+                padding: 10px;
+                width: 250px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+    
+            .newsletter-form button {
+                background-color: #333;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    
+            .newsletter-form button:hover {
+                background-color: #555;
+            }
+    
+            /* Map Section */
+            .map-container {
+                margin-top: 20px;
+            }
+        </style>
+    
+        <script>
+            // JavaScript for FAQ Accordion
+            const faqItems = document.querySelectorAll(".faq-item");
+            faqItems.forEach(item => {
+                item.querySelector(".faq-question").addEventListener("click", function () {
+                    item.classList.toggle("active");
+                });
+            });
+        </script>
+    
+
+    <script>
+        // JavaScript for Interactive Color Change
+        document.getElementById("changeColorButton").addEventListener("click", function () {
+            const colors = ["#f4a300", "#ff6f61", "#20b2aa", "#a6c9ff", "#ffcc00", "#8a2be2"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.getElementById("colorBox").style.backgroundColor = randomColor;
+        });
+    </script>
+
+    <style>
+        /* Additional Styles for Gallery and Table */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            text-align: left;
+            padding: 10px;
+        }
+
+        table th {
+            background-color: #333;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        iframe {
+            border-radius: 8px;
+        }
+    </style>
+
+        <!-- Smooth Scroll to Sections -->
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+    
+            /* Animation for Section Appearance */
+            .fade-in {
+                opacity: 0;
+                transition: opacity 1s ease-out;
+            }
+    
+            .fade-in.visible {
+                opacity: 1;
+            }
+        </style>
+    
+        <script>
+            // Intersection Observer to trigger fade-in animation
+            const sections = document.querySelectorAll('.fade-in');
+            const observerOptions = {
+                root: null,
+                threshold: 0.5, // Trigger animation when 50% of the element is in view
+            };
+    
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+    
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        </script>
+        <!-- Sticky Navigation -->
+        <style>
+            /* Add styles for sticky navigation */
+            header {
+                position: relative;
+                width: 100%;
+                background-color: #333;
+                color: white;
+                padding: 20px 0;
+                transition: top 0.3s ease;
+            }
+    
+            /* Sticky style */
+            header.sticky {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+    
+            header nav ul {
+                display: flex;
+                justify-content: center;
+            }
+    
+            header nav ul li {
+                margin: 0 15px;
+                list-style: none;
+            }
+    
+            header nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: bold;
+            }
+    
+            header nav ul li a:hover {
+                color: #f4f4f4;
+            }
+        </style>
+    
+        <script>
+            // Sticky Header functionality
+            const header = document.querySelector('header');
+            const sticky = header.offsetTop;
+    
+            window.onscroll = function() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add('sticky');
+                } else {
+                    header.classList.remove('sticky');
+                }
+            };
+        </script>
+    
+
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Sample Website. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
